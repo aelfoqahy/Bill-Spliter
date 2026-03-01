@@ -1,0 +1,22 @@
+running_total = 0
+
+group_num = 4
+
+appetizers = 33.37
+main_courses = 189.97
+desserts = 66.99
+drinks = 50.88
+
+running_total = appetizers + main_courses + desserts + drinks
+
+print('Total without tip:' , running_total)
+
+tip = running_total * 0.25
+
+running_total += tip
+
+print('Total with tip:' , running_total)
+
+final_bill = round((running_total / group_num) , 2)
+
+print('Each pays:' , final_bill)
